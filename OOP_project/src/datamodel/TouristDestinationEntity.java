@@ -3,6 +3,8 @@ package datamodel;
 import java.util.List;
 import java.util.Map;
 
+import constant.constants;
+
 public class TouristDestinationEntity extends baseEntity{
 
 	public TouristDestinationEntity() {
@@ -24,6 +26,9 @@ public class TouristDestinationEntity extends baseEntity{
 	public TouristDestinationEntity(String name, String description, Map<String, String> additionalInfo) {
 		super(name, description, additionalInfo);
 		// TODO Auto-generated constructor stub
+	}
+	public String getType() {
+		return constants.TOURIST_ENTITY;
 	}
 
 }

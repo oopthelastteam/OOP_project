@@ -3,6 +3,8 @@ package datamodel;
 import java.util.List;
 import java.util.Map;
 
+import constant.constants;
+
 public class EventEntity extends baseEntity {
 
 	public EventEntity() {
@@ -24,6 +26,10 @@ public class EventEntity extends baseEntity {
 	public EventEntity(String name, String description, Map<String, String> additionalInfo) {
 		super(name, description, additionalInfo);
 		// TODO Auto-generated constructor stub
+	}
+	
+	public String getType() {
+		return constants.EVENT_ENTITY;
 	}
 
 }

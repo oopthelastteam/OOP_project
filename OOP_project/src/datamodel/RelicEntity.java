@@ -3,6 +3,8 @@ package datamodel;
 import java.util.List;
 import java.util.Map;
 
+import constant.constants;
+
 public class RelicEntity extends baseEntity {
 
 	public RelicEntity() {
@@ -25,5 +27,7 @@ public class RelicEntity extends baseEntity {
 		super(name, description, additionalInfo);
 		// TODO Auto-generated constructor stub
 	}
-
+	public String getType() {
+		return constants.RELIC_ENTITY;
+	}
 }
